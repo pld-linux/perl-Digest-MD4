@@ -1,16 +1,21 @@
+#
+# Conditional build:
+%bcond_without	tests	# don't perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Digest
 %define		pnam	MD4
 Summary:	Digest::MD4 Perl module - MD4 digest algorithm implementation
 Summary(pl):	Modu³ perla Digest::MD4 - implementacja algorytmu skrótu MD4
 Name:		perl-Digest-MD4
-Version:	1.1
-Release:	2
-License:	Artistic or GPL
+Version:	1.2
+Release:	1
+# same as perl
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	72e8a9eadb7d933a7305f1ff6510751c
-BuildRequires:	perl-devel >= 5.6
+# Source0-md5:	dad793796debd38f97907cb812c20302
+BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,7 +35,10 @@ Data Security Inc. w programach perlowych. Algorytm jest opisany w RFC
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -46,7 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/Digest/MD4.pm
 %dir %{perl_vendorarch}/auto/Digest/MD4
-%{perl_vendorarch}/auto/Digest/MD4/autosplit.ix
 %{perl_vendorarch}/auto/Digest/MD4/MD4.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Digest/MD4/MD4.so
 %{_mandir}/man3/*
