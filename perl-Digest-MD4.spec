@@ -29,7 +29,7 @@ Data Security Inc. w programach perlowych. Algorytm jest opisany w RFC
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
