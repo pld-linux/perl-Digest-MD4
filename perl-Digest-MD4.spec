@@ -3,8 +3,8 @@
 %bcond_without	tests	# don't perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Digest
-%define	pnam	MD4
+%define		pdir	Digest
+%define		pnam	MD4
 Summary:	Digest::MD4 - MD4 digest algorithm implementation
 Summary(pl):	Digest::MD4 - implementacja algorytmu skrótu MD4
 Name:		perl-Digest-MD4
