@@ -5,13 +5,13 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Digest
 %define		pnam	MD4
-Summary:	Digest::MD4 Perl module - MD4 digest algorithm implementation
-Summary(pl):	Modu³ perla Digest::MD4 - implementacja algorytmu skrótu MD4
+Summary:	Digest::MD4 - MD4 digest algorithm implementation
+Summary(pl):	Digest::MD4 - implementacja algorytmu skrótu MD4
 Name:		perl-Digest-MD4
 Version:	1.3
 Release:	1
 # same as perl
-License:	GPL or Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d75465d6e11b308f8863604715014470
@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The Digest::MD4 module allows you to use the RSA Data Security Inc.
-MD4 Message Digest algorithm from within Perl programs. The algorithm
+MD4 Message Digest algorithm from within Perl programs.  The algorithm
 is described in RFC 1320.
 
 %description -l pl
