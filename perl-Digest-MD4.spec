@@ -6,7 +6,7 @@
 %define		pdir	Digest
 %define		pnam	MD4
 Summary:	Digest::MD4 - MD4 digest algorithm implementation
-Summary(pl):	Digest::MD4 - implementacja algorytmu skrÛtu MD4
+Summary(pl.UTF-8):   Digest::MD4 - implementacja algorytmu skr√≥tu MD4
 Name:		perl-Digest-MD4
 Version:	1.5
 Release:	1
@@ -24,8 +24,8 @@ The Digest::MD4 module allows you to use the RSA Data Security Inc.
 MD4 Message Digest algorithm from within Perl programs.  The algorithm
 is described in RFC 1320.
 
-%description -l pl
-Modu≥ Digest::MD4 pozwala na uøywanie algorytmu skrÛtu MD4 firmy RSA
+%description -l pl.UTF-8
+Modu≈Ç Digest::MD4 pozwala na u≈ºywanie algorytmu skr√≥tu MD4 firmy RSA
 Data Security Inc. w programach perlowych. Algorytm jest opisany w RFC
 1320.
 
