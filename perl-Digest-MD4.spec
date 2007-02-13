@@ -6,7 +6,7 @@
 %define		pdir	Digest
 %define		pnam	MD4
 Summary:	Digest::MD4 - MD4 digest algorithm implementation
-Summary(pl.UTF-8):   Digest::MD4 - implementacja algorytmu skrótu MD4
+Summary(pl.UTF-8):	Digest::MD4 - implementacja algorytmu skrótu MD4
 Name:		perl-Digest-MD4
 Version:	1.5
 Release:	1
