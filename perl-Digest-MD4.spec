@@ -56,6 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/Digest/MD4.pm
 %dir %{perl_vendorarch}/auto/Digest/MD4
-%{perl_vendorarch}/auto/Digest/MD4/MD4.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Digest/MD4/MD4.so
 %{_mandir}/man3/*
