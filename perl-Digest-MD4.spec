@@ -8,13 +8,13 @@
 Summary:	Digest::MD4 - MD4 digest algorithm implementation
 Summary(pl.UTF-8):	Digest::MD4 - implementacja algorytmu skrótu MD4
 Name:		perl-Digest-MD4
-Version:	1.5
-Release:	15
+Version:	1.9
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Digest/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	594d661c18b46a4aea97931dcaf5ce14
+# Source0-md5:	7d3818b5da96fc876424caebcebf88f4
 URL:		http://search.cpan.org/dist/Digest-MD4/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
