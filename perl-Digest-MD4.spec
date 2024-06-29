@@ -8,7 +8,7 @@ Summary:	Digest::MD4 - MD4 digest algorithm implementation
 Summary(pl.UTF-8):	Digest::MD4 - implementacja algorytmu skrótu MD4
 Name:		perl-Digest-MD4
 Version:	1.9
-Release:	6
+Release:	7
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
